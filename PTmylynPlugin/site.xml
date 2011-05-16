@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.teamunify.eclipse.mylyn.pivotaltracker_1.0.17.jar" id="com.teamunify.eclipse.mylyn.pivotaltracker" version="1.0.17"/>
+   <feature url="features/com.teamunify.eclipse.mylyn.pivotaltracker.svn_1.0.4.jar" id="com.teamunify.eclipse.mylyn.pivotaltracker.svn" version="1.0.4"/>
+</site>

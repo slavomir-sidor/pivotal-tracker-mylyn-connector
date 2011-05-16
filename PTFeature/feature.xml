@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.teamunify.eclipse.mylyn.pivotaltracker"
+      label="Pivotal Tracker Mylyn Connector"
+      version="1.0.17"
+      provider-name="TeamUnify, Inc.">
+
+   <description>
+      A connector for working with Pivotal Tracker projects within
+Mylyn in Eclipse.
+   </description>
+
+   <copyright>
+      Copyright 2011, TeamUnify, LLC. All Rights Reserved.
+   </copyright>
+
+   <license>
+      The Pivotal Tracker Mylyn Connector is provided AS-IS and with warranty. By accepting this license agreement, you acknowledge and assume all responsibility for the effects of this software on your system.
+   </license>
+
+   <url>
+      <update label="Pivotal Tracker Mylyn Connector" url="http://ptmylyn.teamunify.com"/>
+   </url>
+
+   <plugin
+         id="com.teamunify.eclipse.mylyn.pt.core"
+         download-size="0"
+         install-size="0"
+         version="1.0.17"
+         unpack="false"/>
+
+   <plugin
+         id="com.teamunify.eclipse.mylyn.pt.ui"
+         download-size="0"
+         install-size="0"
+         version="1.0.17"
+         unpack="false"/>
+
+</feature>
