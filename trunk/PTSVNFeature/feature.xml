@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.teamunify.eclipse.mylyn.pivotaltracker.svn"
+      label="PivotalTracker Mylyn SVN Connector"
+      version="1.0.4"
+      provider-name="TeamUnify, Inc.">
+
+   <description>
+      SVN tool to help manage branches based on Pivotal Tracker Story IDs
+   </description>
+
+   <copyright>
+      Copyright 2011, TeamUnify, LLC. All Rights Reserved.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      The Pivotal Tracker SVN Connector is provided AS-IS and with
+warranty. By accepting this license agreement, you acknowledge
+and assume all responsibility for the effects of this software
+on your system.
+   </license>
+
+   <plugin
+         id="com.teamunify.eclipse.mylyn.pt.contribution"
+         download-size="0"
+         install-size="0"
+         version="1.0.4"
+         unpack="false"/>
+
+</feature>
