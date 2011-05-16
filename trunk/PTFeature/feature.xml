@@ -10,12 +10,12 @@
 Mylyn in Eclipse.
    </description>
 
-   <copyright>
-      Copyright 2011, TeamUnify, LLC. All Rights Reserved.
+   <copyright url="http://www.gnu.org/licenses/lgpl-3.0.html">
+      Copyright 2011 under the LGPL. See the URL for details.
    </copyright>
 
-   <license>
-      The Pivotal Tracker Mylyn Connector is provided AS-IS and with warranty. By accepting this license agreement, you acknowledge and assume all responsibility for the effects of this software on your system.
+   <license url="http://www.gnu.org/licenses/lgpl-3.0.html">
+      The Pivotal Tracker Mylyn Connector is an open source project covered under the GNU LGPL. This software is provided AS-IS and with no warranty of any kind.
    </license>
 
    <url>
