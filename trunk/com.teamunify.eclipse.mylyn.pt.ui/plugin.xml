@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.3"?>
+<plugin>
+  <extension-point id="com.teamunify.eclipse.mylyn.pt.ui.repositories" name="Repository" schema="schema/com.teamunify.eclipse.mylyn.pt.ui.repositories.exsd"/>
+   <extension-point id="com.teamunify.eclipse.mylyn.pt.ui.connector" name="Connector" schema="schema/com.teamunify.eclipse.mylyn.pt.ui.connector.exsd"/>  
+    <extension
+         point="org.eclipse.mylyn.tasks.ui.repositories">
+      <connectorCore
+            class="com.teamunify.eclipse.mylyn.pt.core.PtConnector">
+      </connectorCore>
+      <connectorUi
+            class="com.teamunify.eclipse.mylyn.pt.ui.PtConnectorUi">
+      </connectorUi>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.core.templates">
+      <repository
+            anonymous="true"
+            label="Pivotal Tracker"
+            repositoryKind="org.eclipse.mylyn.examples.xml"
+            urlRepository="PROJECT_ID">
+      </repository>
+   </extension>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.editors">
+      <pageFactory
+            class="com.teamunify.eclipse.mylyn.pt.ui.PtTaskEditorPageFactory"
+            id="com.teamunify.eclipse.mylyn.pt.ui.pageFactory">
+      </pageFactory>
+   </extension>
+   <extension point="org.eclipse.ui.decorators">
+   	 <decorator
+   			 lightweight="true"
+   			 state="true"
+   			 id="com.teamunify.eclipse.mylyn.pt.ui.taskDecorator"
+   			 label="Pivotal Tracker Task Label Decorator"
+   			 class="com.teamunify.eclipse.mylyn.pt.ui.PtTaskListLabelDecorator">
+   			 <enablement>
+   			    <objectClass name="org.eclipse.mylyn.tasks.core.ITask"/>
+   			 </enablement>
+   	</decorator>
+   </extension>
+   <extension point="org.eclipse.mylyn.tasks.ui.actions">    
+      <dynamicPopupMenu
+            class="com.teamunify.eclipse.mylyn.pt.ui.MoveBefore"
+            menuPath="tasks"/>
+      <dynamicPopupMenu
+            class="com.teamunify.eclipse.mylyn.pt.ui.MoveAfter"
+            menuPath="tasks"/>
+</extension>
+</plugin>

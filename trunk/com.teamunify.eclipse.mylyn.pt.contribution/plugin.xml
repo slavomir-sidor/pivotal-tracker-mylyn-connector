@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension
+         point="com.teamunify.eclipse.mylyn.pt.ui.repositories">
+      <connectorPTRepository
+            class="com.teamunify.eclipse.mylyn.pt.contribution.SVNPtRepository"></connectorPTRepository>
+   </extension>
+   
+  <extension point="org.eclipse.ui.popupMenus">
+         <viewerContribution
+            id="org.eclipse.mylyn.tasklist.ui.viewerContribution"
+            targetID="org.eclipse.mylyn.tasks.ui.views.tasks">  
+	         <action
+               label="Create Branch for This Task"
+               class="com.teamunify.eclipse.mylyn.pt.contribution.BranchAction"
+               menubarPath="miscGroup"
+               id="org.tigris.subversion.subclipse.ui.repositoryBranchTag" enablesFor="*"> 
+     </action> 
+    </viewerContribution>  
+    <viewerContribution
+            id="org.eclipse.mylyn.tasklist.ui.viewerContribution"
+            targetID="org.eclipse.mylyn.tasks.ui.views.tasks">  
+	         <action
+               label="Switch to This Branch"
+               class="com.teamunify.eclipse.mylyn.pt.contribution.SwitchToBranchAction"
+               menubarPath="miscGroup"
+               id="org.tigris.subversion.subclipse.ui.repositoryBranchTag2" enablesFor="*"> 
+     </action> 
+    </viewerContribution>  
+   </extension>
+  <extension
+        point="com.teamunify.eclipse.mylyn.pt.ui.connector">
+     <connectorPTui
+           class="com.teamunify.eclipse.mylyn.pt.contribution.SVNPtConnector">
+     </connectorPTui>
+  </extension>   
+//org.tigris.subversion.subclipse.ui.actions.BranchTagAction
+//com.teamunify.eclipse.mylyn.pt.contribution.BranchAction
+ <!-- <extension point="org.eclipse.ui.popupMenus">
+       <objectContribution
+            objectClass="org.eclipse.core.resources.mapping.ResourceMapping"
+            id="org.tigris.subversion.subclipse.ui.ResourceContributions" adaptable="true">
+            
+		 <action
+               label="Get Projects to Create Branch"
+               class="com.teamunify.eclipse.mylyn.pt.contribution.BranchAction"
+               menubarPath="org.eclipse.mylyn.tasks.ui.views.tasks"
+               id="org.tigris.subversion.subclipse.ui.repositoryBranchTag">
+         </action>
+	</objectContribution>        
+	</extension> --> 
+   
+</plugin>
